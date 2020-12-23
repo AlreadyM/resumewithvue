@@ -1,13 +1,29 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div id="app" class="container">
+      <Nav></Nav>
+      <Footer/>
   </div>
 </template>
+<script>
+import Vue from 'vue'
+import ElementUI from 'element-ui';
+import $ from 'jquery'
+import 'element-ui/lib/theme-chalk/index.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+import Nav from '@/components/Nav.vue'
+import Footer from '@/components/Footer.vue'
+
+
+Vue.use(ElementUI,$);
+export default {
+  components: {
+    Nav,Footer
+  }
+}
+
+console.log($('body'))
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
