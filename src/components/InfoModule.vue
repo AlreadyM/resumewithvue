@@ -52,6 +52,7 @@ export default {
         position:relative;
         font-size:18px;
         padding: 0 18px;
+        white-space:nowrap;
         &::before{
             content:'';
             display: block;
