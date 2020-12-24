@@ -14,7 +14,7 @@
     <el-menu-item index="2-1">占位1</el-menu-item>
     <el-menu-item index="2-2">占位2</el-menu-item>
   </el-submenu>
-  <el-menu-item index="3" ><router-link to="/example">example</router-link></el-menu-item>
+  <el-menu-item index="3" ><router-link to="/problemcollection">ProblemCollection</router-link></el-menu-item>
 </el-menu>
       <router-view></router-view>
     </div>
@@ -35,6 +35,12 @@ export default {
     },
 }
 </script>
-<style lang="">
-    
+<style lang="scss">
+    .el-menu-item{
+        a{
+            text-decoration:none;
+            display:inline-block;
+            height:100%;
+        }
+    }
 </style>

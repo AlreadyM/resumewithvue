@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Example from '@/views/Example.vue'
+import ProblemCollection from '@/views/ProblemCollection.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -22,6 +23,11 @@ const routes = [
     path:'/example',
     name:'example',
     component:Example
+  },
+  {
+    path:'/problemcollection',
+    name:'problemcollection',
+    component:ProblemCollection
   }
 ]
 
