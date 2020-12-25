@@ -11,12 +11,11 @@
   <el-menu-item index="1"><router-link to="/">简历查看</router-link></el-menu-item>
   <el-submenu index="2">
     <template slot="title">样例</template>
-    <el-menu-item index="2-1">占位1</el-menu-item>
-    <el-menu-item index="2-2">占位2</el-menu-item>
+    <el-menu-item index="2-1"  ><router-link to="/example/originjs">OriginJS</router-link></el-menu-item>
+    <el-menu-item index="2-2"><router-link to="/example/li10000">Li 10000 many tags</router-link></el-menu-item>
   </el-submenu>
   <el-menu-item index="3" ><router-link to="/problemcollection">ProblemCollection</router-link></el-menu-item>
 </el-menu>
-      <router-view></router-view>
     </div>
 </template>
 <script>
@@ -30,7 +29,8 @@ export default {
     },
     methods: {
         handleSelect(key, keyPath) {
-        console.log(key, keyPath);
+        // console.log(key, keyPath);
+         key, keyPath 
       }
     },
 }
