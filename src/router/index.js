@@ -2,8 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import ProblemCollection from '@/views/ProblemCollection.vue'
-import OriginJS from '@/views/OriginJS1.vue'
+import OriginJS from '@/views/OriginJS.vue'
 import Li10000 from '@/views/Li10000.vue'
+import AntdTransfer from '@/views/AntdTransfer.vue'
+import Comments from '@/views/Comments.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -23,9 +25,19 @@ const routes = [
     component:Li10000
   },
   {
+    path:'/example/antdtransfer',
+    name:'AntdTransfer',
+    component:AntdTransfer
+  },
+  {
     path:'/problemcollection',
     name:'problemcollection',
     component:ProblemCollection
+  },
+  {
+    path:'/comments',
+    name:'Comments',
+    component:Comments
   }
 ]
 

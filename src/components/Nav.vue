@@ -13,8 +13,12 @@
     <template slot="title">样例</template>
     <el-menu-item index="2-1"  ><router-link to="/example/originjs">OriginJS</router-link></el-menu-item>
     <el-menu-item index="2-2"><router-link to="/example/li10000">Li 10000 many tags</router-link></el-menu-item>
+    <el-menu-item index="2-2"><router-link to="/example/antdtransfer">antdtransfer</router-link></el-menu-item>
   </el-submenu>
   <el-menu-item index="3" ><router-link to="/problemcollection">ProblemCollection</router-link></el-menu-item>
+  <el-menu-item index="4" ><router-link to="/Comments">心得体会</router-link></el-menu-item>
+  <el-menu-item index="5" ><el-link type="primary" href="https://alreadym.github.io/resume" target="_blank">浏览React 用例</el-link></el-menu-item>
+ 
 </el-menu>
     </div>
 </template>
@@ -41,6 +45,8 @@ export default {
             text-decoration:none;
             display:inline-block;
             height:100%;
+            width: 100%;
+            color: #fff;
         }
     }
 </style>

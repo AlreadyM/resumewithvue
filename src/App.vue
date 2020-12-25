@@ -14,17 +14,11 @@
   </div>
 </template>
 <script>
-import Vue from 'vue'
-import ElementUI from 'element-ui';
-import $ from 'jquery'
-import 'element-ui/lib/theme-chalk/index.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import Nav from '@/components/Nav.vue'
 import Footer from '@/components/Footer.vue'
 
 
-Vue.use(ElementUI,$);
 export default {
   data(){
     return {
@@ -42,13 +36,13 @@ export default {
   methods: {
     calcContentHeight: function (){
       var wH = window.innerHeight
-      this.contentHeight = wH - 61 - 70
+      this.contentHeight = wH - 61 - 85
       console.log(wH)
     }
   },
 }
 
-console.log($('body'))
+// console.log($('body'))
 </script>
 
 <style lang="scss">
@@ -56,7 +50,7 @@ console.log($('body'))
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
+    // text-align: center;
     color: #2c3e50;
   }
 
